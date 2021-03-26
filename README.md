@@ -79,3 +79,112 @@ POST   /login
 ## 📜 License
 
 Project under [MIT](./LICENSE) License
+
+## ⚒️ API
+
+## Tools collection [/tools]
+
+### Create tool [POST]
+
++ Request criar nova ferramenta
+
+    + Headers
+    
+            Accept: application/json
+    + Body
+
+            {
+                "title": "hotel",
+                "link": "https://github.com/typicode/hotel",
+                "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+                "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
+            }
++ Response 201 (application/json)
+
+
+### List All tools [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "title": "hotel",
+                "link": "https://github.com/typicode/hotel",
+                "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+                "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
+            },
+            {
+                "title": "git",
+                "link": "https://github.com/typicode/hotel",
+                "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+                "tags":["node", "rain", "flash", "house"]
+            }
+        ]
+
++ Response 404 (Error)
+
+## Tool [/tools/{id_tool}]
+
++ Parameters
+    + id_tool: 1absds-123ewq (hexadecimal, required) - ID tool
+
+## Tool tag [/tools?tag={tag_tool}]
+
++ Parameters
+    + tag_tool: node (string, required) - Name of tool tag
+
+### Delete [DELETE]
+
++ Response 204
+
+## User collection [/user]
+
+### Create a new user [POST]
+
++ Request criar nova ferramenta
+
+    + Headers
+    
+            Accept: application/json
+    + Body
+
+            {
+                "username": "cleitonpin",
+                "email": "cleitonpin@pin.com.br",
+                "password": "thispassword",
+            }
++ Response 201 (application/json)
+
+
+### List All users [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "username": "cleitonpin",
+                "email": "cleitonpin@pin.com.br",
+                "password": "thispassword",
+            },
+            {
+                "username": "luizpoca",
+                "email": "pocasi@pin.com.br",
+                "password": "thispassword",
+            }
+        ]
+
++ Response 404 (Error)
+
+## Users [/user/profile]
+
++ Request listar profile
+
+    + Headers 
+
+            Authorization: 'Bearer token'
+
+    + Response 200
+
+### Delete [DELETE]
+
++ Response 204
