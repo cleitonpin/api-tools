@@ -27,7 +27,27 @@ $ yarn install
 ```console
 $ yarn typeorm migration:run
 ```
-5. Run server
+5. Remove line 4 to 6
+
+<pre>
+  <code>
+    api-tools
+      │
+      │   
+      │   
+      │   
+      │   
+      │
+      ├── ormconfig.js   // ORM and database connection configuration
+      
+      
+4     "ssl": {
+5         "rejectUnauthorized": false
+6     },
+  </code>
+</pre>
+
+6. Run server
 ```console
 $ yarn run dev
 ```
