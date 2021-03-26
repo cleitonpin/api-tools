@@ -13,11 +13,11 @@
 ## ⚙ Installation
 1. Clone repository
 ```console
-$ git clone https://github.com/cleitonpin/PLACEHOLDER.git
+$ git clone https://github.com/cleitonpin/api-tools.git
 ```
 4. Enter in directory
 ```console
-$ cd teste
+$ cd api-tools
 ```
 3. Install dependencies
 ```console
@@ -40,8 +40,9 @@ Heroku [`https://apitools-test.herokuapp.com`](https://apitools-test.herokuapp.c
 ```http
 GET    /tools
 GET    /tools/1
+GET    /tools?tag=node
 POST   /tools
-DELETE /tools
+DELETE /tools/1
 ```
 ### Users
 ```http

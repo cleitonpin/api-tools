@@ -1,12 +1,15 @@
 import { Router } from 'express';
 import AuthController from './controllers/AuthController';
 // controllers
+import NotFoundController from './controllers/NotFoundController';
 import ToolsController from './controllers/ToolsController';
 import UsersController from './controllers/UsersController';
 // middleware
 import authMiddleware from './middleware/authMiddleware';
 
 const routes = Router();
+
+routes.get('/', NotFoundController.index)
 
 routes.post('/tools', ToolsController.create);
 routes.delete('/tools/:id', ToolsController.delete);
