@@ -1,5 +1,7 @@
 # Tools API
 
+<img src="https://heroku-badges.herokuapp.com/?app=heroku-badges" />
+
 ## 🚀 Techs
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -30,7 +32,8 @@ $ yarn typeorm migration:run
 $ yarn run dev
 ```
 
-Access through [`http://localhost:3000`](http://127.0.0.1:3000/)
+Access through [`http://localhost:3000`](http://127.0.0.1:3000/)<br>
+Heroku [`https://apitools-test.herokuapp.com`](https://apitools-test.herokuapp.com)
 
 ## Endpoints
 ### Tools
