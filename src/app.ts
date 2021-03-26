@@ -3,7 +3,6 @@ import 'reflect-metadata';
 import createConnection from './database/connection';
 import routes from './routes';
 
-
 createConnection();
 
 const app = express();
