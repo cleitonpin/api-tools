@@ -27,7 +27,7 @@ $ yarn install
 ```console
 $ yarn typeorm migration:run
 ```
-5. Remove line 4 to 6
+5. Remove line 4 to 6 in ormconfig.js
 
 <pre>
   <code>
