@@ -16,7 +16,6 @@ routes.delete('/tools/:id', ToolsController.delete);
 routes.get('/tools', ToolsController.index);
 routes.get('/tools/:id', ToolsController.index);
 
-
 routes.post('/user', UsersController.create);
 routes.get('/user', UsersController.index);
 
