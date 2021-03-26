@@ -75,11 +75,6 @@ DELETE /user/1
 ```http
 POST   /login
 ```
-
-## 📜 License
-
-Project under [MIT](./LICENSE) License
-
 ## ⚒️ API
 
 ## Tools collection [/tools]
@@ -188,3 +183,7 @@ Project under [MIT](./LICENSE) License
 ### Delete [DELETE]
 
 + Response 204
+
+## 📜 License
+
+Project under [MIT](./LICENSE) License
