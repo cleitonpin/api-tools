@@ -4,8 +4,8 @@ module.exports = {
     "ssl": {
         "rejectUnauthorized": false
     },
-    "migrations": ["dist/database/migrations/**/*.js"],
-    "entities": ["dist/models/**/*.js"],
+    "migrations": ["dist/src/database/migrations/*.js"],
+    "entities": ["dist/src/models/*.js"],
     "logging": false,
     "cli": {
         "migrationsDir": "./src/database/migrations",
