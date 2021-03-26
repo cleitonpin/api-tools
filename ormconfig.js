@@ -8,6 +8,7 @@ module.exports = {
     "entities": ["dist/models/*.js"],
     "logging": false,
     "cli": {
-        "migrationsDir": "./src/database/migrations"
+        "migrationsDir": "./src/database/migrations",
+        "entitiesDir": "src/models"
     }
 }
