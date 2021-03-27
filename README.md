@@ -47,7 +47,14 @@ $ yarn typeorm migration:run
   </code>
 </pre>
 
-6. Run server
+6. Configure .env variables
+```env
+DATABASE_URL=postgres://<username>:<password>@<host>:<port>/<database>
+APP_SECRET=something
+ENTITIES_DIR="./src/models/*.ts"
+MIGRATIONS_DIR="./src/database/migrations/*.ts"
+```
+7. Run server
 ```console
 $ yarn run dev
 ```
